@@ -1,4 +1,4 @@
-function mostrarMenu($event){
+function mostrarMenu(){
         
     let menu = document.getElementById("menu")
 
@@ -12,3 +12,6 @@ function mostrarMenu($event){
     
     event.preventDefault();
 }
+
+
+alert("Olá Mundo!")
