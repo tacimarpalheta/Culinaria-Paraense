@@ -3,46 +3,52 @@
     padding: 0px;
 }
 
-body{
-background-color: #f2f2f2;
+body {
+    background-color: #f2f2f2;
+    overflow: unset;
 }
 
-@media only screen and (max-width: 768px){
-body {
-    font-size: 14px;
-   
-}  
+p {
+    margin: 2px;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+
+    }
+}
+
 header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     background-color: #c74c34;
-    height: 160px; 
+    height: 274px;
 }
 
 @media (max-width: 768px) {
     header {
-         height: 200px;   
+        height: 230px;
     }
 }
 
+
 img {
     width: 220px;
-    aspect-ratio: auto 220 / 120;
-    height: 120px;
+    height: 220px;
 }
 
 .image img {
     object-fit: cover;
     height: 320px;
-    width: 100%;   
-}  
+    width: 100%;
+}
 
 .menu {
     display: inline;
-    justify-content: space-between;  
+    justify-content: space-between;
     text-align: right;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .menu ul li {
@@ -50,7 +56,7 @@ img {
     padding-right: 50px;
 }
 
-.menu li > a {
+.menu li>a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -60,13 +66,13 @@ img {
     transition: all 0.3s ease;
 }
 
-.menu li > a:hover {
+.menu li>a:hover {
     color: #FFA500;
     letter-spacing: 5px;
-   
+
 }
 
-.menu li > a::after {
+.menu li>a::after {
     content: "";
     display: block;
     width: 0px;
@@ -74,28 +80,29 @@ img {
     border-radius: 200px;
 }
 
-.menu li > a:hover::after {
+.menu li>a:hover::after {
     width: 140%;
     transition: all 0.3s ease;
-    background: rgba(199,76,52,1);
-    background: -moz-linear-gradient(left, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,76,52,1)), color-stop(100%, rgba(255,165,0,1)));
-    background: -webkit-linear-gradient(left, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    background: -o-linear-gradient(left, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    background: -ms-linear-gradient(left, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    background: linear-gradient(to right, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c74c34', endColorstr='#ffa500', GradientType=1 );
+    background: rgba(199, 76, 52, 1);
+    background: -moz-linear-gradient(left, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199, 76, 52, 1)), color-stop(100%, rgba(255, 165, 0, 1)));
+    background: -webkit-linear-gradient(left, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    background: -o-linear-gradient(left, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c74c34', endColorstr='#ffa500', GradientType=1);
 }
 
 .icone-menu {
-    height: 40px;
+    height: 30px;
 }
 
-@media screen and (min-width: 280px) and (max-width: 890px){
+@media screen and (min-width: 280px) and (max-width: 890px) {
     #barras {
         display: inline;
         float: right;
     }
+
     .menu {
         display: none;
         position: absolute;
@@ -104,12 +111,22 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color:  #c74c34;
+        background-color: #c74c34;
         height: 250px;
         width: 200px;
-    }  
+    }
+
     #menu a {
-    font-size: 25px;
+        font-size: 25px;
+    }
+
+    .icone-menu {
+        height: 30px;
+        width: 30px;
+        top: 7.5rem;
+        left: calc(80vw - 0.5rem);
+        max-width: 412px;
+        position: absolute;
     }
 
 }
@@ -117,15 +134,13 @@ img {
 h1 {
     color: brown;
     font-size: 40px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 }
 
 .presentation {
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 30px;
+    margin: 30px 50px;
     color: #4a4a4a;
     font-size: 18px;
 }
@@ -134,20 +149,21 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
     color: #4a4a4a;
-    display: flex; 
+    display: flex;
     align-items: center;
     position: relative;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin: 30px 50px;
 }
-@media only screen and (max-width: 890px){
-    #descricao {    
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 15%;
-    height: 100%; 
-}
+
+@media only screen and (max-width: 890px) {
+    #descricao {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 15%;
+        height: 100%;
+        margin: 30px 10px;
+    }
 }
 
 #descricao p {
@@ -156,15 +172,15 @@ h1 {
     font-size: 18px;
 }
 
-@media only screen and (min-width: 280px) and (max-width: 890px){
+@media only screen and (min-width: 280px) and (max-width: 890px) {
     #descricao p {
-    display: flex;
-    position: relative;
-    max-width: 100%;
-    margin-top: 10%;
-    margin-bottom: 15%;
-    margin-left: 15%;
-}
+        display: flex;
+        position: relative;
+        max-width: 100%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        margin-left: 15%;
+    }
 }
 
 
@@ -174,22 +190,22 @@ h1 {
     top: 25px;
     margin: 0px 0px 15px;
     margin-right: 50px;
-    margin-left: 50px; 
+    margin-left: 50px;
 }
 
-@media only screen and (max-width: 890px){
+@media only screen and (max-width: 890px) {
     #descricao h2 {
-    position: relative;
-    display: flex;
-    flex-direction: column;        
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
 }
-}   
 
 #descricao img {
     display: inline;
     margin-top: 40px;
     margin-left: 50px;
-    margin-right: 50px;  
+    margin-right: 50px;
     background-color: #f5f5f5;
     border: 1px solid #d5d5d5;
     padding: 6px;
@@ -197,47 +213,47 @@ h1 {
     height: 200px;
 }
 
-@media only screen and (max-width: 890px){
-#decricao img {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
- }
-}
-
-.container{
-    background:#FFF;
-    margin-left: 50px;
-    margin-top: 40px;
-    height: 310px;   
-}
-
-@media only screen and (min-width: 280px) and (max-width: 890px) {
-    #container{
+@media only screen and (max-width: 890px) {
+    #decricao img {
         display: flex;
         flex-direction: column;
-}
+        width: 100%;
+    }
 }
 
-.content {
-    background-color:#A9A9A9;
-    display: flex; 
-    align-items: center;
-    
-}   
+.container {
+    background: #FFF;
+    margin: 40px 0px 0px 50px;
+    height: 310px;
+}
 
 @media only screen and (min-width: 280px) and (max-width: 890px) {
-.content {
-    margin: 0;
-    width: 100%;
-    display: flex;
+    #container {
+        display: flex;
         flex-direction: column;
-    
+        margin: 40px 10px;
+    }
 }
+
+.content {
+    background-color: #A9A9A9;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 890px) {
+    .content {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 #secao-sobre {
-display: flex;
+    display: flex;
 }
 
 #secao-sobre h3 {
@@ -258,49 +274,48 @@ display: flex;
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
-    color: #4a4a4a;  
+    color: #4a4a4a;
 }
 
 
 .content_sobre {
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 25px;
-    margin-top: 30px;
-    background-color: #f5f5f5;    
+    margin: 30px 50px 25px 50px;
+    background-color: #f5f5f5;
 }
 
-@media only screen and (min-width: 280px) and (max-width: 890px){
-    .content_sobre {    
+@media only screen and (min-width: 280px) and (max-width: 890px) {
+    .content_sobre {
         display: flex;
         flex-direction: column;
-        position: relative;    
-        
-     }
+        position: relative;
+        margin: 30px 10px 25px 10px;
+
     }
+}
 
 .img_content {
     width: 500px;
     height: 400px;
-    margin-right: 50px;
+    margin: 10px 50px 10px 0px;
     background-color: #f5f5f5;
     border: 1px solid #d5d5d5;
     padding: 6px;
     position: relative;
     display: inline;
     justify-content: center;
-} 
+}
 
-@media only screen and (min-width: 280px) and (max-width: 890px){
+@media only screen and (min-width: 280px) and (max-width: 890px) {
     .img_content {
         display: flex;
         justify-content: center;
         flex-direction: column;
         height: 100%;
-       position: relative;
-       width: 100%;      
-        
-     }
+        position: relative;
+        width: 90%;
+        margin: 0 0 10px 0;
+        border: 0;
+    }
 }
 
 #contato h4 {
@@ -308,7 +323,7 @@ display: flex;
     font-size: 40px;
     text-align: center;
     color: brown;
-    margin-top: 25px; 
+    margin-top: 25px;
 }
 
 #contato p {
@@ -317,7 +332,7 @@ display: flex;
     color: #4a4a4a;
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 }
 
 form {
@@ -330,17 +345,20 @@ form {
     border-radius: 1em;
 }
 
-@media only screen and (min-width: 280px) and (max-width: 890px){
+@media only screen and (min-width: 280px) and (max-width: 890px) {
     form {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 80%;
     }
-}       
+}
 
-form div + div {
+form div+div {
     margin-top: 15px;
-} 
-        
+}
+
 label {
     /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhados*/
     display: inline-block;
@@ -348,41 +366,48 @@ label {
     text-align: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #4a4a4a;
-    
+
 }
-@media only screen and (min-width: 280px) and (max-width: 890px){
+
+@media only screen and (min-width: 280px) and (max-width: 890px) {
     label {
-        width: 50%; 
-        
+        width: 100%;
+        text-align: center;
+
     }
-}        
-input, textarea {
+}
+
+input,
+textarea {
     /* 
   Para garantir que todos os campos de texto tenham as mesmas configurações de fonte
        Por padrão, as áreas de texto possuem a mesma fonte */
-    font-family: 1em  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+    font-family: 1em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     /* Para dar o mesmo tamanho a todos os campos de texto*/
     width: 300px;
     height: 30px;
     box-sizing: border-box;
-  
+
     /* Para harmonizar o aspecto e a sensação da borda do campo de texto */
     border: 1px solid brown;
     align-items: center;
 }
-  
-@media only screen and (min-width: 280px) and (max-width: 890px){
-    input, textarea {
-        width: 80%; 
-        
+
+@media only screen and (min-width: 280px) and (max-width: 890px) {
+
+    input,
+    textarea {
+        width: 100%;
+        align-items: center;
+        margin: 0;
     }
-}   
-  
+}
+
 textarea {
     /* Para alinhar corretamente campos de texto multilinha com seus rótulos */
     vertical-align: top;
-     
+
     /* Para dar espaço suficiente para digitar algum texto */
     height: 10em;
 }
@@ -391,16 +416,16 @@ textarea {
     /* Para posicionar os botões na mesma posição dos campos de texto */
     /* mesmo tamanho que os elementos do rótulo */
     justify-content: center;
-    display: flex;     
-}   
-  
+    display: flex;
+}
+
 button {
     /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço
        entre os rótulos e seus campos de texto*/
     margin-left: .5em;
     margin-top: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;  
+    color: white;
 }
 
 #button-submit {
@@ -417,14 +442,15 @@ button {
     background-color: brown;
     padding: 10px;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 12px;
+    bottom: 12px;
     box-shadow: 3px 3px 10px #333;
     cursor: pointer;
-    
+    z-index: 100;
+
 }
 
-.btn-fixed::before{
+.btn-fixed::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -432,26 +458,26 @@ button {
     background: #FFA500;
     transition: all .5s;
     z-index: -1;
-  }
+}
 
-  .efeito::before {
+.efeito::before {
     width: 0;
     height: 100%;
     top: 0%;
     left: 0%;
-  }
-  
-  .efeito:hover::before{
+}
+
+.efeito:hover::before {
     width: 100%;
-    background: rgba(199,76,52,1);
-    background: -moz-linear-gradient(left, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,76,52,1)), color-stop(100%, rgba(255,165,0,1)));
-    background: -webkit-linear-gradient(left, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    background: -o-linear-gradient(left, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    background: -ms-linear-gradient(left, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    background: linear-gradient(to right, rgba(199,76,52,1) 0%, rgba(255,165,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c74c34', endColorstr='#ffa500', GradientType=1 );
-  }
+    background: rgba(199, 76, 52, 1);
+    background: -moz-linear-gradient(left, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199, 76, 52, 1)), color-stop(100%, rgba(255, 165, 0, 1)));
+    background: -webkit-linear-gradient(left, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    background: -o-linear-gradient(left, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(199, 76, 52, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c74c34', endColorstr='#ffa500', GradientType=1);
+}
 
 footer {
     display: flex;
@@ -471,20 +497,20 @@ footer {
     display: flex;
     justify-content: center;
     gap: 10px;
-     
+
 }
 
 #social-list img {
     width: 30px;
     height: 30px;
-}   
+}
 
 #social-list li {
     list-style: none;
 }
 
-.rodape-text {   
-    color:#fff;
+.rodape-text {
+    color: #fff;
     display: flex;
     justify-content: center;
     margin-top: 10px;
